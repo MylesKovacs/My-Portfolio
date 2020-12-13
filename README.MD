@@ -11,4 +11,4 @@ Created by Myles Kovacs
 
 Live application
 https://myleskovacs.github.io/My-Portfolio/
-![Alt text](../Assets/Images/LiveApp.jpg?raw=true "Myles Kovacs Design")
+https://github.com/MylesKovacs/My-Portfolio/blob/master/Assets/Images/LiveApp.JPG 
