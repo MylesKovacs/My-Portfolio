@@ -4,13 +4,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background: #132fcf91;
+}
+
 /* Body Styles Start */
 body {
-    color: #f7f20091;
-    background-color: #132fcf91;
+    color: whitesmoke;
+    background-color: var(--background);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* Body Style End */
+
+section {
+    margin: 10px auto;
+}
 
 
 /* Header Styles Start */
@@ -18,6 +26,10 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+header h1 {
+    margin-bottom: 5px;
 }
 
 header nav ul {
@@ -29,6 +41,7 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
+    font-size: 2vw;
 }
 
 header a {
@@ -37,3 +50,53 @@ header a {
 }
 /* Header Styles End */
 
+/* Hero Styles Start */
+.hero {
+    background-image: url('../Assets/Images/pexels-claudia-schmalz-5953634.jpg');
+    background-size: cover;
+    height: 300px;
+}
+
+/* Hero Style End */
+
+/* About Me Styling Start */
+.about-me {
+    display: flex;
+    text-align: center;
+}
+.about-me-info {
+    display: flex;
+    width: 80%;
+}
+.about-me-img {
+    display: flex;
+}
+
+.about-me h3 {
+    text-align: center;
+    
+}
+
+.about-me-img img {
+    max-width: 100%;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px) {
+    .about-me {
+        display: block;
+    }
+    .about-me-info {
+        width: 100%;
+    }
+}
