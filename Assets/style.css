@@ -41,7 +41,7 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 header nav ul li a:hover {
@@ -71,19 +71,19 @@ header a {
 }
 
 .project3000 {
-    background-image: url("../Assets/Images/RunBuddyimg.jpg");
+    background-image: url("../Assets/Images/pj3000.jpeg");
 }
 
 .wow {
-    background-image: url("../Assets/Images/RunBuddyimg.jpg");  
+    background-image: url("../Assets/Images/wow.jpeg");  
 }
 
 .verycool {
-    background-image: url("../Assets/Images/RunBuddyimg.jpg");
+    background-image: url("../Assets/Images/veryc.jpeg");
 }
 
 .realthing {
-    background-image: url("../Assets/Images/RunBuddyimg.jpg");
+    background-image: url("../Assets/Images/Real.jpeg");
 }
 
 .works-grid-wrapper {
@@ -101,17 +101,29 @@ header a {
     grid-gap: 20px;
 }
 
+.works-grid-container a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 .works-grid-item {
     padding: 50px;
+    background-size: cover;
     border: 2px solid rgba(0, 0, 0, 0.356);
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
 }
 
+.works-grid-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
 .works-grid-item.runbuddy {
     grid-column: 1/ span 2;
     grid-row: 1/span 2;
+
 }
 
 /* About Me Styling Start */
@@ -125,11 +137,16 @@ header a {
 }
 .about-me-img {
     display: flex;
+    margin-left: 5px;
 }
 
 .about-me h3 {
     text-align: center;
     
+}
+
+.about-me h4 {
+    background:rgba(0, 0, 0, 0.356);
 }
 
 .about-me-img img {
@@ -138,6 +155,10 @@ header a {
     width: 250px;
     margin: 0 auto
 }
+
+/* About Me Styles End */
+
+/* Contact Info Styles Start */
 
 .contact-info {
     display: flex;
@@ -149,9 +170,13 @@ header a {
     color: whitesmoke;
 }
 
+/* Contact Info Styles End */
+
 
 @media screen and (max-width: 980px) {
-
+    header nav ul li a {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
