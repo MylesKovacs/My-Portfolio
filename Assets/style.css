@@ -42,6 +42,12 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-size: 2vw;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+header nav ul li a:hover {
+    text-shadow: none;
+    color: var(--background);
+    background: whitesmoke
 }
 
 header a {
@@ -58,6 +64,55 @@ header a {
 }
 
 /* Hero Style End */
+
+/* Works Styles Start */
+.runbuddy {
+    background-image: url("../Assets/Images/RunBuddyimg.jpg");
+}
+
+.project3000 {
+    background-image: url("../Assets/Images/RunBuddyimg.jpg");
+}
+
+.wow {
+    background-image: url("../Assets/Images/RunBuddyimg.jpg");  
+}
+
+.verycool {
+    background-image: url("../Assets/Images/RunBuddyimg.jpg");
+}
+
+.realthing {
+    background-image: url("../Assets/Images/RunBuddyimg.jpg");
+}
+
+.works-grid-wrapper {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: left;
+}
+
+.works-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.works-grid-item {
+    padding: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.356);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.works-grid-item.runbuddy {
+    grid-column: 1/ span 2;
+    grid-row: 1/span 2;
+}
 
 /* About Me Styling Start */
 .about-me {
@@ -83,6 +138,17 @@ header a {
     width: 250px;
     margin: 0 auto
 }
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 
 @media screen and (max-width: 980px) {
 
