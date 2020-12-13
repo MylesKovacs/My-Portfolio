@@ -61,11 +61,58 @@ header a {
     background-image: url('../Assets/Images/pexels-claudia-schmalz-5953634.jpg');
     background-size: cover;
     height: 300px;
+    width: 100%;
 }
-
+.hero h3 {
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.753);
+    font-size: larger;
+}
+ 
 /* Hero Style End */
 
+/* About Me Styling Start */
+.about-me {
+    display: flex;
+    text-align: center;
+}
+.about-me-info {
+    display: flex;
+    width: 80%;
+}
+.about-me-info h4 {
+    font-size: 18px;
+}
+.about-me-img {
+    display: flex;
+    margin-left: 5px;
+}
+
+.about-me h2 {
+    text-align: center;
+    border-right: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+.about-me h4 {
+    background:rgba(0, 0, 0, 0.356);
+}
+
+.about-me-img img {
+    max-width: 100%;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto
+}
+
+/* About Me Styles End */
+
 /* Works Styles Start */
+
+.my-works {
+    display: flex;
+    text-align: center;
+}
+
 .runbuddy {
     background-image: url("../Assets/Images/RunBuddyimg.jpg");
 }
@@ -126,43 +173,19 @@ header a {
 
 }
 
-/* About Me Styling Start */
-.about-me {
-    display: flex;
-    text-align: center;
-}
-.about-me-info {
-    display: flex;
-    width: 80%;
-}
-.about-me-img {
-    display: flex;
-    margin-left: 5px;
-}
 
-.about-me h3 {
-    text-align: center;
-    
-}
-
-.about-me h4 {
-    background:rgba(0, 0, 0, 0.356);
-}
-
-.about-me-img img {
-    max-width: 100%;
-    height: 250px;
-    width: 250px;
-    margin: 0 auto
-}
-
-/* About Me Styles End */
 
 /* Contact Info Styles Start */
 
 .contact-info {
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
+    background-color:rgba(10, 32, 131, 0.356)
+}
+
+.contact-info h2 {
+    text-align: center;
 }
 
 .contact-info a {
@@ -179,15 +202,15 @@ header a {
     }
 }
 
-@media screen and (max-width: 768px) {
-
-}
-
 @media screen and (max-width: 575px) {
     .about-me {
         display: block;
     }
     .about-me-info {
         width: 100%;
+    }
+    .works-grid-container a.wow {
+        text-shadow: 0 0 5px rgba(0,0,0, 1);
+        text-align: start;
     }
 }
