@@ -122,7 +122,8 @@ header a {
 }
 
 .thatoneanswer {
-    background-image: url("../Assets/Images/HomePage.jpeg");  
+    background-image: url("../Assets/Images/HomePage.JPG"); 
+    color: black; 
 }
 
 .verycool {
